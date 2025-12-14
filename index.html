@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conversor de unidades completo - Temperatura, Volumen, Longitud, Peso, Distancia y Área">
+    <meta name="author" content="Tu Nombre">
+    <title>Conversor de Unidades | Aplicación Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title"> Bienvenido al Conversor de Unidades</h1>
+            <h2 class="title"> 🍍Piñexus🍍</h2>
+            <p class="subtitle">Convierte entre diferentes unidades de medida de forma rápida y precisa</p>
+        </header>
+
+        <!-- Card de Conversión -->
+        <main class="conversion-card">
+            <!-- Selector de Categoría -->
+            <div class="input-group">
+                <label for="categoria" class="label">
+                    <span class="label-icon">📂</span>
+                    Categoría
+                </label>
+                <select id="categoria" class="select" aria-label="Seleccionar categoría">
+                    <option value="temperatura">🌡️ Temperatura</option>
+                    <option value="volumen">🧪 Volumen</option>
+                    <option value="longitud">📏 Longitud</option>
+                    <option value="peso">⚖️ Peso</option>
+                    <option value="distancia">🚗 Distancia</option>
+                    <option value="area">📐 Área</option>
+                </select>
+            </div>
+
+            <!-- Selector de Tipo de Conversión -->
+            <div class="input-group">
+                <label for="conversion" class="label">
+                    <span class="label-icon">🔀</span>
+                    Tipo de Conversión
+                </label>
+                <select id="conversion" class="select" aria-label="Seleccionar tipo de conversión">
+                    <option value="celsiusToFahrenheit">Celsius → Fahrenheit</option>
+                    <option value="fahrenheitToCelsius">Fahrenheit → Celsius</option>
+                </select>
+            </div>
+
+            <!-- Campo de Valor -->
+            <div class="input-group">
+                <label for="valor" class="label">
+                    <span class="label-icon">✏️</span>
+                    Valor a Convertir
+                </label>
+                <input 
+                    type="number" 
+                    id="valor" 
+                    class="input" 
+                    step="0.01" 
+                    placeholder="Ingrese el valor"
+                    aria-label="Valor a convertir"
+                    required
+                >
+            </div>
+
+            <!-- Botón de Conversión -->
+            <button class="btn-convertir" onclick="app.convertir()" aria-label="Realizar conversión">
+                <span class="btn-text">Convertir</span>
+                <span class="btn-icon">→</span>
+            </button>
+
+            <!-- Área de Resultado -->
+            <div class="resultado" id="resultado" role="alert" aria-live="polite"></div>
+        </main>
+
+        <!-- Sección de Información -->
+        <aside class="info-section">
+            <h3 class="info-title">ℹ️ Información</h3>
+            <p id="infoText" class="info-text">
+                Selecciona una categoría y el tipo de conversión que deseas realizar.
+            </p>
+        </aside>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Desarrollado con mucho corazón para el curso de Lenguaje de Programación I</p>
+            <p>BY ALEXIA FABIANA PEREZ SALDAÑA</p>
+        </footer>
+    </div>
+
+    <!-- Script Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
