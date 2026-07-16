@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="es"><head><title>Comprar y pagar - Piñexus Streaming</title><meta charset="UTF-8">
+<meta name="description" content="Finaliza tu compra de streaming: revisa tu pedido, elige método de pago (Yape, Plin, Dale) y envía tu voucher por WhatsApp.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/styles.css"></head><body>
+<header class="site-header">
+    <div class="header-overlay"></div>
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <a href="index.html" class="brand-home" aria-label="Ir al inicio">
+                <img src="img/LogoPiñexus.png" alt="Logo Piñexus Streaming" class="logo">
+            </a>
+            <button class="mobile-menu" id="mobileMenuBtn" type="button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+            <nav id="navegacion" class="navegacion"><a href="index.html">Inicio</a><a href="guia-productos.html">Catálogo</a><a href="combos.html">Combos</a><a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="soporte.html">Soporte</a><a href="login.html">Mi cuenta</a><a href="contacto.html" class="activo">Comprar</a></nav>
+        </div>
+        <div class="hero-texto">
+            <span class="promo-etiqueta">Checkout</span>
+            <h1>Finaliza tu pedido</h1>
+            <p>Revisa tu selección, elige método de pago, adjunta voucher y envía tu solicitud.</p>
+            <div class="promo-botones">
+                <a href="guia-productos.html" class="boton boton-verde">Explorar catálogo</a>
+                <a href="contacto.html" class="boton boton-morado">Pagar pedido</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="contenedor checkout-grid">
+    <form class="form-card" id="purchaseForm">
+        <fieldset><legend id="formLegend">Pedido</legend><label for="tipoSolicitud">Tipo</label><select id="tipoSolicitud"><option value="compra">Comprar servicio o combo</option><option value="combo">Solicitar combo personalizado</option><option value="testimonio">Realizar testimonio</option></select><label for="pedidoResumen">Servicios seleccionados</label><textarea id="pedidoResumen" placeholder="Se cargará desde el catálogo o carrito"></textarea><label for="totalPedido">Total</label><input id="totalPedido" type="text" readonly placeholder="S/ 0"></fieldset>
+        <fieldset><legend>Cliente y pago</legend><label for="nombre">Nombre</label><input id="nombre" type="text" required placeholder="Tu nombre"><label for="telefono">WhatsApp</label><input id="telefono" type="tel" required placeholder="Tu número"><label for="correo">Correo</label><input id="correo" type="email" placeholder="tu@email.com"><label for="metodoPago">Método de pago</label><select id="metodoPago"><option>Yape</option><option>Plin</option><option>Dale</option><option>SIP / Ágora</option><option>Banco de la Nación</option><option>Enviaré voucher por WhatsApp</option></select><label for="voucher">Adjuntar voucher</label><input id="voucher" type="file" accept="image/*,.pdf"><label for="mensaje">Mensaje</label><textarea id="mensaje" placeholder="Horario, correo de acceso, detalle del combo o testimonio"></textarea></fieldset>
+        <button class="boton boton-verde" type="submit">Preparar solicitud</button><a class="boton boton-morado d-block" id="whatsappOrder" href="https://wa.me/51943973864">Enviar por WhatsApp</a><p class="form-note" id="formNote"></p>
+    </form>
+    <aside class="checkout-side"><h2>Resumen</h2><div id="checkoutItems"></div><button class="boton boton-morado" id="clearCart" type="button">Vaciar carrito</button></aside>
+    <section class="payment-box" id="pagos">
+    <div>
+        <span class="mini-etiqueta">Pago y validación</span>
+        <h2>Escanea, paga y adjunta tu voucher</h2>
+        <p>Usa Yape, Plin, Dale, SIP/Ágora o Banco de la Nación. Después de pagar, adjunta el voucher en el formulario o envíalo por WhatsApp.</p>
+        <a class="whatsapp-card" href="https://wa.me/51943973864">WhatsApp: 943 973 864</a>
+        <a class="whatsapp-card" href="mailto:alekaren39@gmail.com">Correo: alekaren39@gmail.com</a>
+        <p class="bank-note"><strong>Banco de la Nación:</strong> confirma el número de cuenta por WhatsApp antes de transferir.</p>
+    </div>
+    <div class="qr-grid">
+        <article><img src="img/yape.jpeg" alt="QR Yape" loading="lazy"><strong>Yape</strong></article>
+        <article><img src="img/plin.jpeg" alt="QR Plin" loading="lazy"><strong>Plin</strong></article>
+        <article><img src="img/dale.jpeg" alt="QR Dale" loading="lazy"><strong>Dale</strong></article>
+        <article><img src="img/sip-agora.jpeg" alt="QR SIP Ágora" loading="lazy"><strong>SIP / Ágora</strong></article>
+    </div>
+</section>
+</main><footer class="site-footer">
+    <div class="contenedor footer-grid">
+        <div>
+            <strong>Piñexus Streaming</strong>
+            <p>Streaming premium con atención directa, garantía y pagos por billetera digital.</p>
+        </div>
+        <div class="footer-contact">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/51943973864">943 973 864</a>
+            <span>Correo</span>
+            <a href="mailto:alekaren39@gmail.com">alekaren39@gmail.com</a>
+        </div>
+        <nav class="footer-nav">
+            <a href="guia-productos.html">Catálogo</a>
+            <a href="login.html">Mi cuenta</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="contacto.html?tipo=testimonio">Testimonio</a>
+        </nav>
+    </div>
+    <p class="copyright">Todos los derechos reservados 2026 &copy; Piñexus Streaming</p>
+</footer>
+<button class="cart-float" id="cartFloat" type="button">Carrito <span id="cartCount">0</span></button>
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+    <div class="cart-head">
+        <h2>Tu compra</h2>
+        <button id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">S/ 0</strong></div>
+    <a class="boton boton-verde d-block" id="checkoutLink" href="contacto.html">Continuar pago</a>
+</aside>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<script src="js/scripts.js" defer></script></body></html>

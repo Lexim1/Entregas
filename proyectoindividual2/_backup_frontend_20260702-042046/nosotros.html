@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="es"><head><title>Nosotros - Piñexus Streaming</title><meta charset="UTF-8">
+<meta name="description" content="Conoce Piñexus Streaming: atención directa, garantía en cada servicio y pagos seguros por billetera digital.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/styles.css"></head><body>
+<header class="site-header">
+    <div class="header-overlay"></div>
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <a href="index.html" class="brand-home" aria-label="Ir al inicio">
+                <img src="img/LogoPiñexus.png" alt="Logo Piñexus Streaming" class="logo">
+            </a>
+            <button class="mobile-menu" id="mobileMenuBtn" type="button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+            <nav id="navegacion" class="navegacion"><a href="index.html">Inicio</a><a href="guia-productos.html">Catálogo</a><a href="combos.html">Combos</a><a href="nosotros.html" class="activo">Nosotros</a><a href="blog.html">Blog</a><a href="soporte.html">Soporte</a><a href="login.html">Mi cuenta</a><a href="contacto.html">Comprar</a></nav>
+        </div>
+        <div class="hero-texto">
+            <span class="promo-etiqueta">Quiénes somos</span>
+            <h1>Una tienda digital enfocada en atención clara</h1>
+            <p>Piñexus Streaming vende servicios digitales premium con proceso sencillo, soporte directo y visión de crecer hacia una plataforma con base de datos.</p>
+            <div class="promo-botones">
+                <a href="guia-productos.html" class="boton boton-verde">Explorar catálogo</a>
+                <a href="contacto.html" class="boton boton-morado">Pagar pedido</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="contenedor about-layout"><img src="img/nosotros.jpg" alt="Equipo Piñexus Streaming" loading="lazy"><section><span class="mini-etiqueta">Empresa</span><h2>Piñexus Streaming</h2><p>Somos una tienda de entretenimiento digital que reúne streaming, anime, música, contenido familiar y combos. Nuestro objetivo es que el cliente sepa qué compra, cuánto paga y cómo pedir ayuda.</p><div class="mission-grid"><article><h3>Misión</h3><p>Facilitar servicios premium con compra rápida, pagos claros y soporte cercano.</p></article><article><h3>Visión</h3><p>Convertirnos en una plataforma completa con gestión de clientes, pedidos, renovaciones y soporte conectado a Spring y MySQL.</p></article><article><h3>Valores</h3><p>Claridad, rapidez, responsabilidad, garantía y mejora continua.</p></article></div></section></main>
+<footer class="site-footer">
+    <div class="contenedor footer-grid">
+        <div>
+            <strong>Piñexus Streaming</strong>
+            <p>Streaming premium con atención directa, garantía y pagos por billetera digital.</p>
+        </div>
+        <div class="footer-contact">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/51943973864">943 973 864</a>
+            <span>Correo</span>
+            <a href="mailto:alekaren39@gmail.com">alekaren39@gmail.com</a>
+        </div>
+        <nav class="footer-nav">
+            <a href="guia-productos.html">Catálogo</a>
+            <a href="login.html">Mi cuenta</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="contacto.html?tipo=testimonio">Testimonio</a>
+        </nav>
+    </div>
+    <p class="copyright">Todos los derechos reservados 2026 &copy; Piñexus Streaming</p>
+</footer>
+<button class="cart-float" id="cartFloat" type="button">Carrito <span id="cartCount">0</span></button>
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+    <div class="cart-head">
+        <h2>Tu compra</h2>
+        <button id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">S/ 0</strong></div>
+    <a class="boton boton-verde d-block" id="checkoutLink" href="contacto.html">Continuar pago</a>
+</aside>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<script src="js/scripts.js" defer></script></body></html>

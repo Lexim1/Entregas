@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="es"><head><title>Mi cuenta - Piñexus Streaming</title><meta charset="UTF-8">
+<meta name="description" content="Inicia sesión o crea tu cuenta en Piñexus Streaming para ver tus servicios activos, renovaciones y soporte.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/styles.css"></head><body>
+<header class="site-header">
+    <div class="header-overlay"></div>
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <a href="index.html" class="brand-home" aria-label="Ir al inicio">
+                <img src="img/LogoPiñexus.png" alt="Logo Piñexus Streaming" class="logo">
+
+            </a>
+            <button class="mobile-menu" id="mobileMenuBtn" type="button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+            <nav id="navegacion" class="navegacion"><a href="index.html">Inicio</a><a href="guia-productos.html">Catálogo</a><a href="combos.html">Combos</a><a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="soporte.html">Soporte</a><a href="login.html" class="activo">Mi cuenta</a><a href="contacto.html">Comprar</a></nav>
+        </div>
+        <div class="hero-texto">
+            <span class="promo-etiqueta">Zona cliente</span>
+            <h1>Tu cuenta para compras, renovaciones y soporte</h1>
+            <p>Inicia sesión para revisar tus servicios activos, renovar a tiempo y pedir ayuda sin volver a explicar tu pedido.</p>
+            <div class="promo-botones">
+                <a href="guia-productos.html" class="boton boton-verde">Explorar catálogo</a>
+                <a href="contacto.html" class="boton boton-morado">Pagar pedido</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="contenedor account-layout">
+    <section class="login-card" id="authCard">
+        <div class="auth-tabs" role="tablist">
+            <button type="button" class="auth-tab active" id="tabLogin" data-tab="login" role="tab" aria-selected="true">Iniciar sesión</button>
+            <button type="button" class="auth-tab" id="tabRegister" data-tab="register" role="tab" aria-selected="false">Crear cuenta</button>
+        </div>
+
+        <div class="auth-panel" data-panel="login">
+            <span class="mini-etiqueta">Bienvenido de nuevo</span>
+            <h2>Acceso de cliente</h2>
+            <p>Ingresa con tu teléfono o correo para revisar tus compras y soporte.</p>
+            <form id="loginForm" novalidate>
+                <label for="loginUser">Teléfono o correo</label>
+                <input id="loginUser" name="loginUser" type="text" placeholder="943973864 o correo@ejemplo.com" autocomplete="username" required>
+                <label for="loginPass">Contraseña</label>
+                <div class="pass-field">
+                    <input id="loginPass" name="loginPass" type="password" placeholder="Tu contraseña" autocomplete="current-password" required>
+                    <button type="button" class="toggle-pass" data-target="loginPass" aria-label="Mostrar contraseña">Mostrar</button>
+                </div>
+                <button class="boton boton-verde d-block" type="submit">Ingresar</button>
+            </form>
+            <p class="form-note" id="loginNote" role="status"></p>
+        </div>
+
+        <div class="auth-panel hidden" data-panel="register">
+            <span class="mini-etiqueta">Nuevo por aquí</span>
+            <h2>Crea tu cuenta</h2>
+            <p>Regístrate para guardar tus pedidos y ver tus servicios activos en tu panel.</p>
+            <form id="registerForm" novalidate>
+                <label for="regNombre">Nombre completo</label>
+                <input id="regNombre" name="regNombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+                <label for="regCorreo">Correo</label>
+                <input id="regCorreo" name="regCorreo" type="email" placeholder="tu@email.com" autocomplete="email" required>
+                <label for="regTelefono">WhatsApp</label>
+                <input id="regTelefono" name="regTelefono" type="tel" placeholder="943973864" autocomplete="tel" required>
+                <label for="regPass">Contraseña</label>
+                <div class="pass-field">
+                    <input id="regPass" name="regPass" type="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password" minlength="6" required>
+                    <button type="button" class="toggle-pass" data-target="regPass" aria-label="Mostrar contraseña">Mostrar</button>
+                </div>
+                <label for="regPass2">Confirmar contraseña</label>
+                <div class="pass-field">
+                    <input id="regPass2" name="regPass2" type="password" placeholder="Repite tu contraseña" autocomplete="new-password" minlength="6" required>
+                    <button type="button" class="toggle-pass" data-target="regPass2" aria-label="Mostrar contraseña">Mostrar</button>
+                </div>
+                <label class="check-line"><input id="regTerms" type="checkbox" required> Acepto que mis datos se usen para gestionar mi cuenta y mis pedidos.</label>
+                <button class="boton boton-verde d-block" type="submit">Crear cuenta</button>
+            </form>
+            <p class="form-note" id="registerNote" role="status"></p>
+        </div>
+    </section>
+
+    <section class="client-panel hidden" id="clientPanel">
+        <div class="panel-head">
+            <div><span class="mini-etiqueta">Mi cuenta</span><h2 id="clientGreeting">Mis servicios</h2></div>
+            <div class="panel-head-actions">
+                <a href="soporte.html" class="boton boton-morado">Soporte</a>
+                <button class="boton boton-outline" id="logoutBtn" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+        <div class="status-grid"><article><strong>3</strong><span>Activos</span></article><article><strong>1</strong><span>Por vencer</span></article><article><strong>S/ 21</strong><span>Último pedido</span></article></div>
+        <div class="table-wrap"><table><thead><tr><th>Servicio</th><th>Estado</th><th>Vence</th><th>Acción</th></tr></thead><tbody><tr><td>Netflix</td><td><span class="state ok">Activo</span></td><td>15/07/2026</td><td><a href="contacto.html?pedido=Renovar%20Netflix&total=13">Renovar</a></td></tr><tr><td>Disney+ con ESPN</td><td><span class="state warn">Por vencer</span></td><td>04/07/2026</td><td><a href="contacto.html?pedido=Renovar%20Disney%2B%20con%20ESPN&total=8">Renovar</a></td></tr><tr><td>Spotify</td><td><span class="state ok">Activo</span></td><td>22/07/2026</td><td><a href="soporte.html">Soporte</a></td></tr></tbody></table></div>
+        <p class="form-note dashboard-hint">Te avisaremos qué servicios están activos, cuáles vencen pronto y qué compras puedes renovar en un toque.</p>
+    </section>
+</main><footer class="site-footer">
+    <div class="contenedor footer-grid">
+        <div>
+            <strong>Piñexus Streaming</strong>
+            <p>Streaming premium con atención directa, garantía y pagos por billetera digital.</p>
+        </div>
+        <div class="footer-contact">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/51943973864">943 973 864</a>
+            <span>Correo</span>
+            <a href="mailto:alekaren39@gmail.com">alekaren39@gmail.com</a>
+        </div>
+        <nav class="footer-nav">
+            <a href="guia-productos.html">Catálogo</a>
+            <a href="login.html">Mi cuenta</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="contacto.html?tipo=testimonio">Testimonio</a>
+        </nav>
+    </div>
+    <p class="copyright">Todos los derechos reservados 2026 &copy; Piñexus Streaming</p>
+</footer>
+<button class="cart-float" id="cartFloat" type="button">Carrito <span id="cartCount">0</span></button>
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+    <div class="cart-head">
+        <h2>Tu compra</h2>
+        <button id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">S/ 0</strong></div>
+    <a class="boton boton-verde d-block" id="checkoutLink" href="contacto.html">Continuar pago</a>
+</aside>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<script src="js/scripts.js" defer></script></body></html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="es"><head><title>Catálogo - Piñexus Streaming</title><meta charset="UTF-8">
+<meta name="description" content="Catálogo completo de servicios y combos de streaming: filtra por categoría, selecciona varios productos y compra en un solo pedido.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/styles.css"></head><body>
+<header class="site-header">
+    <div class="header-overlay"></div>
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <a href="index.html" class="brand-home" aria-label="Ir al inicio">
+                <img src="img/LogoPiñexus.png" alt="Logo Piñexus Streaming" class="logo">
+
+            </a>
+            <button class="mobile-menu" id="mobileMenuBtn" type="button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+            <nav id="navegacion" class="navegacion"><a href="index.html">Inicio</a><a href="guia-productos.html" class="activo">Catálogo</a><a href="combos.html">Combos</a><a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="soporte.html">Soporte</a><a href="login.html">Mi cuenta</a><a href="contacto.html">Comprar</a></nav>
+        </div>
+        <div class="hero-texto">
+            <span class="promo-etiqueta">Catálogo completo</span>
+            <h1>Elige tu plataforma o arma un combo a tu medida</h1>
+            <p>Filtra por entretenimiento, música, anime o familia. Agrega servicios al carrito y termina tu pedido por WhatsApp.</p>
+            <div class="promo-botones">
+                <a href="guia-productos.html" class="boton boton-verde">Explorar catálogo</a>
+                <a href="contacto.html" class="boton boton-morado">Pagar pedido</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="contenedor catalog-actions"><input id="searchInput" type="search" placeholder="Buscar Netflix, Disney, anime, música, deportes..."><select id="categoryFilter"><option value="todos">Todo el catálogo</option><option value="producto">Solo servicios</option><option value="combo">Solo combos</option><option value="series">Series</option><option value="familia">Familia</option><option value="anime">Anime</option><option value="musica">Música</option></select><button class="boton boton-morado" id="buySelected" type="button">Comprar seleccionados</button></section>
+    <section class="contenedor section-head"><div><span class="mini-etiqueta">Servicios individuales</span><h2>Plataformas disponibles</h2><p>Elige una cuenta individual con calidad, garantía y soporte directo.</p></div></section>
+    <section class="contenedor product-grid" id="servicesGrid"><article class="product-card" data-type="producto" data-category="series peliculas popular" data-name="NETFLIX" data-price="13">
+    <img class="product-image" src="img/Netflix.png" alt="NETFLIX" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Más pedido</span>
+        <h3>NETFLIX</h3>
+        <p>Series virales, películas, documentales y estrenos frecuentes. Fuerte para quienes quieren variedad y tendencias.</p>
+        <strong class="price">S/ 13</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">4K</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="series peliculas max" data-name="HBO MAX" data-price="5">
+    <img class="product-image" src="img/hbomax.png" alt="HBO MAX" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Series premium</span>
+        <h3>HBO MAX</h3>
+        <p>HBO Originals, Warner, cine de superhéroes y producciones de tono cinematográfico.</p>
+        <strong class="price">S/ 5</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">4K</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="familia deportes disney" data-name="DISNEY+ CON ESPN" data-price="8">
+    <img class="product-image" src="img/disneyplus.png" alt="DISNEY+ CON ESPN" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Con deportes</span>
+        <h3>DISNEY+ CON ESPN</h3>
+        <p>Disney, Pixar, Marvel, Star Wars y ESPN. La opción más completa para familia y deportes.</p>
+        <strong class="price">S/ 8</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">4K</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="familia disney" data-name="DISNEY+ ESTÁNDAR" data-price="6">
+    <img class="product-image" src="img/disneyplus.png" alt="DISNEY+ ESTÁNDAR" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Sin ESPN</span>
+        <h3>DISNEY+ ESTÁNDAR</h3>
+        <p>Marvel, Pixar, Star Wars y clásicos Disney. Ideal si no necesitas deportes.</p>
+        <strong class="price">S/ 6</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">4K</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="peliculas series prime" data-name="PRIME VIDEO" data-price="5">
+    <img class="product-image" src="img/primevideo.png" alt="PRIME VIDEO" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Variedad</span>
+        <h3>PRIME VIDEO</h3>
+        <p>Películas, series originales, acción, comedia y contenido internacional a precio accesible.</p>
+        <strong class="price">S/ 5</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">4K</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="anime series" data-name="CRUNCHYROLL" data-price="4">
+    <img class="product-image" src="img/crunchyroll.png" alt="CRUNCHYROLL" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Anime</span>
+        <h3>CRUNCHYROLL</h3>
+        <p>Simulcast, temporadas nuevas, clásicos japoneses y catálogo especializado para fans del anime.</p>
+        <strong class="price">S/ 4</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">Full HD</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="latino novelas peliculas" data-name="VIX" data-price="5">
+    <img class="product-image" src="img/vixpremium.png" alt="VIX" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Latino</span>
+        <h3>VIX</h3>
+        <p>Novelas, realities, películas en español y entretenimiento latino cercano.</p>
+        <strong class="price">S/ 5</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">Full HD</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="producto" data-category="musica podcasts" data-name="SPOTIFY" data-price="9">
+    <img class="product-image" src="img/Spotify.png" alt="SPOTIFY" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Música</span>
+        <h3>SPOTIFY</h3>
+        <p>Música y podcasts sin anuncios, descargas, playlists y recomendaciones personalizadas.</p>
+        <strong class="price">S/ 9</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">Premium</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article></section>
+    <section class="contenedor section-head" id="combos-catalogo"><div><span class="mini-etiqueta">Combos</span><h2>Paquetes recomendados</h2><p>Combina tus plataformas favoritas y paga un solo pedido.</p></div></section>
+    <section class="contenedor product-grid" id="combosGrid"><article class="product-card" data-type="combo" data-category="combo cine series peliculas" data-name="COMBO CINE TOTAL: Netflix + HBO MAX + Prime Video" data-price="21">
+    <img class="product-image" src="img/combocinetotal.png" alt="COMBO CINE TOTAL: Netflix + HBO MAX + Prime Video" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Cine y series</span>
+        <h3>COMBO CINE TOTAL: Netflix + HBO MAX + Prime Video</h3>
+        <p>Tres servicios para series virales, producciones premium y películas variadas.</p>
+        <strong class="price">S/ 21</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">1 disp. c/u</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="combo" data-category="combo familia deportes" data-name="COMBO FAMILIAR: Disney+ con ESPN + Prime Video + Vix" data-price="16">
+    <img class="product-image" src="img/combofamiliar.png" alt="COMBO FAMILIAR: Disney+ con ESPN + Prime Video + Vix" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Familia</span>
+        <h3>COMBO FAMILIAR: Disney+ con ESPN + Prime Video + Vix</h3>
+        <p>Familia, deportes, películas y contenido latino en un solo paquete.</p>
+        <strong class="price">S/ 16</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">1 disp. c/u</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="combo" data-category="combo anime musica" data-name="COMBO FAN: Crunchyroll + Spotify" data-price="12">
+    <img class="product-image" src="img/combocrunchyyspotify.png" alt="COMBO FAN: Crunchyroll + Spotify" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Anime + música</span>
+        <h3>COMBO FAN: Crunchyroll + Spotify</h3>
+        <p>Anime para maratonear y música/podcasts sin anuncios.</p>
+        <strong class="price">S/ 12</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">1 disp. c/u</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article>
+<article class="product-card" data-type="combo" data-category="combo full premium" data-name="COMBO FULL PREMIUM: Netflix + HBO MAX + Disney+ con ESPN + Spotify" data-price="32">
+    <img class="product-image" src="img/combofull.jpeg" alt="COMBO FULL PREMIUM: Netflix + HBO MAX + Disney+ con ESPN + Spotify" loading="lazy">
+    <div class="product-body">
+        <span class="pill">Completo</span>
+        <h3>COMBO FULL PREMIUM: Netflix + HBO MAX + Disney+ con ESPN + Spotify</h3>
+        <p>Un paquete completo para series, familia, deportes y música diaria.</p>
+        <strong class="price">S/ 32</strong>
+    </div>
+    <ul class="specs">
+        <li><img src="img/dispositivo.png" alt="" loading="lazy">1 dispositivo</li>
+        <li><img src="img/4k-fullhd.png" alt="" loading="lazy">1 disp. c/u</li>
+        <li><img src="img/garantia.png" alt="" loading="lazy">Garantía</li>
+    </ul>
+    <div class="card-actions">
+        <label><input type="checkbox" class="select-item"> Seleccionar</label>
+        <button class="boton boton-morado add-cart" type="button">Agregar</button>
+    </div>
+</article></section>
+</main><footer class="site-footer">
+    <div class="contenedor footer-grid">
+        <div>
+            <strong>Piñexus Streaming</strong>
+            <p>Streaming premium con atención directa, garantía y pagos por billetera digital.</p>
+        </div>
+        <div class="footer-contact">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/51943973864">943 973 864</a>
+            <span>Correo</span>
+            <a href="mailto:alekaren39@gmail.com">alekaren39@gmail.com</a>
+        </div>
+        <nav class="footer-nav">
+            <a href="guia-productos.html">Catálogo</a>
+            <a href="login.html">Mi cuenta</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="contacto.html?tipo=testimonio">Testimonio</a>
+        </nav>
+    </div>
+    <p class="copyright">Todos los derechos reservados 2026 &copy; Piñexus Streaming</p>
+</footer>
+<button class="cart-float" id="cartFloat" type="button">Carrito <span id="cartCount">0</span></button>
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+    <div class="cart-head">
+        <h2>Tu compra</h2>
+        <button id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">S/ 0</strong></div>
+    <a class="boton boton-verde d-block" id="checkoutLink" href="contacto.html">Continuar pago</a>
+</aside>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<script src="js/scripts.js" defer></script></body></html>
